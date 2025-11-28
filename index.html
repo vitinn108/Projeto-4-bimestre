@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script src="./script.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paladar Refinado</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Paladar <span>Refinado</span></div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a href="#cardapio" class="btn-header">Peça Agora</a>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Sabores que Aquecem a Alma</h1>
+      <p>Experimente o melhor da culinária artesanal, feita com paixão e ingredientes selecionados.</p>
+      <a href="#cardapio" class="btn">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <!-- Cardápio -->
+  <section id="cardapio" class="cardapio">
+    <h2>Nosso Cardápio</h2>
+    <div class="pratos">
+      <div class="prato">
+        <img src="https://media.istockphoto.com/id/1581084025/pt/foto/plate-with-spaghetti-carbonara-on-a-laid-table.jpg?s=612x612&w=0&k=20&c=0HNcdq9zBAeYC-ZMDx52Rr3nfQ60tQ5twE9CVim2LdU=" alt="Massa artesanal">
+        <h3>Massa Artesanal</h3>
+        <p>Feita à mão com molho especial da casa.</p>
+        <span class="preco">R$ 42,90</span>
+        <button onclick="pedir('Massa Artesanal')">Pedir</button>
+      </div>
+
+      <div class="prato">
+        <img src="https://lirp.cdn-website.com/0ccd126d/dms3rep/multi/opt/Prato-de-risoto-de-camarao-ie-pescados-cremoso-com-queijo-parmesao-ralado-e-ervas-frescas-servido-em-um-prato-branco-9c3a84ac-14dd6748-640w.jpg" alt="Risoto de camarão">
+        <h3>Risoto de camarão</h3>
+        <p>Creme de parmesão com toque de azeite trufado.</p>
+        <span class="preco">R$ 49,90</span>
+        <button onclick="pedir('Risoto de Cogumelos')">Pedir</button>
+      </div>
+
+      <div class="prato">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/68/d2/f1/file-mignon-acompanhado.jpg" alt="Filé ao molho madeira">
+        <h3>Filé ao Molho Madeira</h3>
+        <p>Acompanha purê de batatas e legumes grelhados.</p>
+        <span class="preco">R$ 58,90</span>
+        <button onclick="pedir('Filé ao Molho Madeira')">Pedir</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <div class="texto-sobre">
+      <h2>Sobre Nós</h2>
+      <p>No <strong>Paladar Refinado</strong>, acreditamos que cada prato conta uma história. 
+         Nossa missão é proporcionar experiências gastronômicas inesquecíveis em um ambiente acolhedor e elegante.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1601924582971-47a3b0b5d6a9" alt="Chef preparando comida">
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <form id="form-contato">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu email" required>
+      <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Paladar Refinado • Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

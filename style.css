@@ -1,0 +1,223 @@
+:root {
+  --vermelho: #b23a48;
+  --dourado: #f2c14e;
+  --marrom: #8c5e3c;
+  --creme: #fff8e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--creme);
+  color: #d90606;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--vermelho);
+  color: white;
+  padding: 15px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+}
+
+.logo span {
+  color: var(--dourado);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--dourado);
+}
+
+.btn-header {
+  background: var(--dourado);
+  color: var(--marrom);
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1601924582971-47a3b0b5d6a9') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.btn {
+  background-color: var(--dourado);
+  color: var(--marrom);
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #f5d16b;
+}
+
+/* Cardápio */
+.cardapio {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.cardapio h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+  color: var(--vermelho);
+}
+
+.pratos {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.prato {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.prato:hover {
+  transform: translateY(-5px);
+}
+
+.prato img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.prato h3 {
+  margin: 10px 0;
+  color: var(--vermelho);
+}
+
+.preco {
+  font-weight: bold;
+  color: var(--marrom);
+}
+
+.prato button {
+  background-color: var(--dourado);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: var(--marrom);
+  font-weight: 600;
+}
+
+/* Sobre */
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 10%;
+  background-color: var(--marrom);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.sobre img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.texto-sobre {
+  max-width: 500px;
+}
+
+/* Contato */
+.contato {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contato input, .contato textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #930707;
+  font-size: 1em;
+}
+
+.contato button {
+  background-color: var(--vermelho);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contato button:hover {
+  background-color: #d14553;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--vermelho);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
